@@ -2,10 +2,8 @@ import React from "react";
 import { useState } from "react";
 import "./Login.css";
 import Logo from "/public/logo.png";
-const Login = () => {
-  const temp = () => {
-   console.log("Tạm cho hết lỗi");
-  };
+function Login() {
+
   return (
     <div id="root">
       <div className="account-pages my-12 pt-12">
@@ -34,7 +32,7 @@ const Login = () => {
                     <form className="">
                       <div className="mb-4">
                         <label className="mb-2 block">Username</label>
-                        <div className="mb-4 bg-soft-light block">
+                        <div className="mb-4 bg-soft-light block username">
                           <span
                             className="px-4 py-2 bg-gray-100 border border-[#e6ebf5] border-solid text-muted"
                             id="basic-addon3"
@@ -48,8 +46,6 @@ const Login = () => {
                             type="text"
                             className="border border-[#e6ebf5] border-solid py-2 w-[300px] px-4 text-gray-600 focus:outline-none"
                             aria-invalid="false"
-                            value="admin@themesbrand.com"
-                            onChange={temp}
                           />
                         </div>
                       </div>
@@ -63,7 +59,7 @@ const Login = () => {
                           </a>
                         </div>
                         <label className="block mb-2">Password</label>
-                        <div className="mb-4 block">
+                        <div className="mb-4 block password">
                           <span className="px-4 py-2 bg-gray-100 border border-[#e6ebf5] border-solid text-muted">
                             <i className="fa-solid fa-lock"></i>
                           </span>
@@ -74,8 +70,6 @@ const Login = () => {
                             type="password"
                             className="border border-[#e6ebf5] border-solid py-2 w-[300px] px-4 text-gray-600 focus:outline-none "
                             aria-invalid="false"
-                            value="123456"
-                            onChange={temp}
                           />
                         </div>
                       </div>
@@ -94,12 +88,15 @@ const Login = () => {
                       </div>
                       <div className="d-grid">
                         <button
-                          type="submit"
+
+                          type="button"
                           className="waves-effect waves-light btn btn-primary d-block w-100
                           text-white
                           w-96 h-10
                           rounded-lg
-                          bg-[--bs-primary]"
+                          bg-[--bs-primary]
+                          "
+                          
                         >
                           Sign in
                         </button>
