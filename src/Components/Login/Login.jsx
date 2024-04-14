@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Login.css";
 import Logo from "/public/logo.png";
 const Login = () => {
@@ -111,9 +112,9 @@ const Login = () => {
               <div className="mt-10 text-center">
                 <p className="mb-4">
                   Don't have an account ?
-                  <a className="font-medium text-primary" href="">
-                    Signup now
-                  </a>
+                  <Link className="font-medium text-primary" to="/signup">
+                    Sign up
+                  </Link>
                 </p>
                 <p>
                   © 2024 Chatvia. Crafted with
