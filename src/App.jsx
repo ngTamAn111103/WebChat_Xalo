@@ -1,13 +1,14 @@
 import "./App.css";
-import Login from "./Components/Login/Login.jsx";
-import SignUp from "./Components/SignUp/SignUp.jsx";
-import { useState } from "react";
+
+import { Login } from "./Components/Login.jsx";
+
+
 function App() {
 
   return (
-    <div>
-      <Login></Login>
-    </div>
+    <>
+     <Login/>
+    </>
   );
 }
 
